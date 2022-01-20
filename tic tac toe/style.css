@@ -1,0 +1,724 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    background-color:#080808;
+}
+
+
+
+nav ul{
+    list-style-type: none;
+    font-family:'Bebas Neue', cursive;
+    color:rgb(243, 243, 243);
+    
+}
+nav{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:black;
+    height: 10vh;
+    border-bottom:1px solid rgba(255, 255, 255);
+}
+.gamecontainer{
+    
+    background-color:#080808;
+    width:100vh;
+    height: 100vh;
+}
+.container{
+
+    display:-ms-grid;
+    display:grid;
+    -ms-grid-rows:repeat(3, 10vw);
+    -ms-grid-columns:repeat(3 ,10vw);
+    grid-template-rows:repeat(3, 10vw);
+    grid-template-columns:repeat(3, 10vw);
+    position: relative;
+    left:60vw;
+    margin-top: 8vw;
+    background-color:#080808;
+
+    
+
+}
+.box{
+    font-family:'Bebas Neue', cursive;
+    color:rgb(66, 188, 245);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-top:1px solid rgb(243, 243, 243);
+    border-left:1px solid rgb(243, 243, 243);
+    border-right: 1px solid rgb(243, 243, 243);
+    border-bottom:1px solid rgb(243, 243, 243);
+    font-size: 6vw;
+    /* box-shadow: 0px 0px 5px 10px #323232; */
+    
+}
+.box:hover{
+    background-color:rgb(255, 255, 255);
+        box-shadow: 0px 0px 5px 10px #323232; 
+
+}
+.gameinfo{
+    display:none;
+    box-sizing: border-box;
+    background-color:#080808;
+    font-family:'Bebas Neue', cursive;
+}
+
+/* 
+.main.fr .firstbox{
+    display: flex;
+    align-items: center;
+    clear:bottom;
+    overflow: hidden;
+    justify-content: center;
+
+} */
+.firstbox{
+    display: flex;
+    width:40vw;
+    height:20vw;
+    align-items: center;
+justify-content: center;
+position: relative;
+left: 30vw;
+top:10vw;
+background-color:white;
+font-family:'Bebas Neue', cursive;
+color: rgb(141, 224, 213);
+overflow: hidden;
+box-sizing: border-box;
+clear:bottom;
+}
+.firstbox h2{
+    font-family:'Bebas Neue', cursive;
+    position: relative;
+bottom:30%;
+left:10%;
+font-size:2vw;
+animation: Krishna 2s linear 0.2s 0;
+box-sizing: border-box;
+display:flex;
+clear:bottom;
+clear:left;
+
+}
+#Friend{
+    position: relative;
+display:none;
+box-sizing: border-box;
+
+font-family:'Bebas Neue', cursive;
+border:1px solid yellow;
+font-size:1vw;
+padding:1vw 1vw;
+background-color:yellow;
+border-radius:10px;
+color: rgb(98, 236, 128);
+box-shadow: 0px 0px 2px 3px yellow;
+animation: Krishna 2s linear 0.2s 0;
+}
+.firstbox:hover #Friend{
+    display:flex;
+    transition-duration: 3s;
+    animation: Krishna 9s linear 0.2s 0;
+    transition: 2s;
+    box-sizing: border-box;
+    top:15%; 
+right:25%;
+
+}
+@keyframes Krishna{
+    from{
+        left:0%;
+    }
+    to {
+        left:100%;
+    }
+}
+
+label{
+    color:white;
+}
+
+
+/* .firstbox:hover .computer{
+    display:none;
+    display:flex;
+    position: relative;
+    top:35%;
+    right:40%;
+    padding:1vh 2vh;
+    background-color:yellow;
+    border-radius:10px;
+    border:1px solid yellow;
+}/
+/* 
+.firstbox:hover .friend{
+    display: none;
+    display:flex;
+    position: relative;
+    top:35%;
+    right:35%;
+    padding:1vh 2vh;
+    background-color:yellow;
+    border-radius:10px;
+    border:1px solid yellow;
+} */
+.gmodes{
+    font-family:'Bebas Neue', cursive;
+    position: relative;
+bottom:20%;
+left:10%;
+font-size:2vw;
+animation: Krishna 2s linear 0.2s 0;
+box-sizing: border-box;
+}
+.computer{
+display:none;
+position: relative;
+box-sizing: border-box;
+
+font-family:'Bebas Neue', cursive;
+border:1px solid yellow;
+font-size:1vw;
+padding:1vw 1vw;
+background-color:yellow;
+border-radius:10px;
+color: rgb(98, 236, 128);
+box-shadow: 0px 0px 2px 3px yellow;
+animation: Krishna 2s linear 0.2s 0;
+}
+.firstbox:hover .computer{
+    
+    display:flex;
+    transition-duration: 3s;
+    animation: Krishna 9s linear 0.2s 0;
+    transition: 2s;
+    box-sizing: border-box;
+    top:15%;  
+right:10%;
+animation: Krishna 4s linear 0.1s 0 left fill-mode;
+}
+.firstbox:hover h2{
+    display:none;
+}
+.firstbox h3{
+
+    font-family:'Bebas Neue', cursive;
+    position: relative;
+bottom:30%;
+left:10%;
+font-size:2vw;
+animation: Krishna 2s linear 0.2s 0;
+box-sizing: border-box;
+display:flex;
+clear:bottom;
+clear:left;
+display:none;
+animation: Krishna 4s linear 0.1s 0 left fill-mode;
+transition: 4s ease-in-out 0 ;
+
+
+}
+.firstbox:hover h3{
+    
+    font-family:'Bebas Neue', cursive;
+    position: relative;
+bottom:30%;
+left:10%;
+font-size:2vw;
+animation: Krishna 2s linear 0.2s 0;
+box-sizing: border-box;
+display:flex;
+clear:bottom;
+clear:left;
+transform: transition;
+transition-duration: 4s ;
+animation: Krishna 4s linear 0.1s 0 left fill-mode;
+}
+.frgamecontainer{
+    
+    background-color:#080808;
+    width:100vh;
+    height: 100vh;
+}
+.frcontainer{
+    display:-ms-grid;
+    display:grid;
+    -ms-grid-rows:repeat(3, 10vw);
+    -ms-grid-columns:repeat(3 ,10vw);
+    grid-template-rows:repeat(3, 10vw);
+    grid-template-columns:repeat(3, 10vw);
+    position: relative;
+    left:60vw;
+    margin-top: 8vw;
+    background-color:#080808;
+
+    
+
+}
+.fbox{
+    font-family:'Bebas Neue', cursive;
+    color:rgb(66, 188, 245);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border-top:1px solid rgb(243, 243, 243);
+    border-left:1px solid rgb(243, 243, 243);
+    border-right: 1px solid rgb(243, 243, 243);
+    border-bottom:1px solid rgb(243, 243, 243);
+    font-size: 6vw;
+    /* box-shadow: 0px 0px 5px 10px #323232; */
+    
+}
+.fbox:hover{
+    background-color:rgb(255, 255, 255);
+        box-shadow: 0px 0px 5px 10px #323232; 
+
+}
+.frgameinfo{
+    box-sizing: border-box;
+    background-color:#080808;
+    width: 32vw;
+    height:32vw;
+    position: relative;
+    bottom:30.5vw;
+position: relative;
+left:10vw;
+    font-family:'Bebas Neue', cursive;
+}
+.main.fr .frgamecontainer{
+    display:flex;
+}
+.frgamecontainer .gamecontainer{
+    display:none;
+}
+.frgamecontainer .firstbox{
+    display:none;
+}
+.main.fr .firstbox{
+    display:none;
+}
+.main.fr .gamecontainer{
+    display:none;
+}
+.main.com .frgamecontainer{
+    display:none;
+}
+.main .firstbox{
+    display:none
+}
+.firstbox .gamecontainer{
+    display:none;
+}
+.main .gamecontainer{
+    display:none;
+}
+.main .frgamecontainer{
+    display:none;
+}
+.main .firstbox {
+    display:flex;
+}
+.main.com .frcontainer{
+    display:none;
+}
+.main.com .firstbox {
+    display:none;
+}
+.main.com .gamecontainer{
+display:flex;
+flex:wrap;
+    background-color:#080808;
+    width:100vh;
+    height: 100vh;
+
+}
+.main.com .gameinfo{
+    background-color:#080808;
+    display:flex;
+    position: relative;
+    top:30vh;
+    right:50vh;
+    height:50vh;
+    width:50vh;
+}
+.main.com .gameinfo h1{
+box-sizing: border-box;
+font-family:'Bebas Neue', cursive;
+font-size:12vh;
+color:#310707;
+position: relative;
+bottom:30vh;
+}
+.main.com .info{
+    box-sizing: border-box;
+    font-family:'Bebas Neue', cursive;
+    font-size:5vh;
+    color:#310707;
+    position: relative;
+    top:10vh;
+    right:35vh;
+
+}
+.main.com #reset{
+    box-sizing: border-box;
+    font-family:'Bebas Neue', cursive;
+    font-size:2.5vh;
+    color:rgb(54, 218, 155);
+    position: relative;
+    top:70%;
+display:flex;
+align-items:center;
+justify-content:center;
+width:10vh;
+height:5vh;
+    background-color:hsla(60, 100%, 73%, 0.986);
+    border-radius: 10px;
+}
+/*.main.com .gameinfo{
+        background-color:white;
+       
+        position: relative;
+        top:35vh;
+        font-family:'Bebas Neue', cursive;
+    }
+    .main.com .box{
+        font-family:'Bebas Neue', cursive;
+        color:rgb(66, 188, 245);
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        border-top:1px solid rgb(243, 243, 243);
+        border-left:1px solid rgb(243, 243, 243);
+        border-right: 1px solid rgb(243, 243, 243);
+        border-bottom:1px solid rgb(243, 243, 243);
+        font-size: 6vw;
+        /* box-shadow: 0px 0px 5px 10px #323232; */
+        
+    
+
+    
+    .main.com .container{
+        display:flex;
+        display:-ms-grid;
+        display:grid;
+        -ms-grid-rows:repeat(3, 10vw);
+        -ms-grid-columns:repeat(3 ,10vw);
+        grid-template-rows:repeat(3, 10vw);
+        grid-template-columns:repeat(3, 10vw);
+        position: relative;
+        left:60vw;
+        margin-top: 8vw;
+        background-color:#080808;
+    
+        
+    
+    }
+    
+    .main.com .box:hover{
+        background-color:rgb(32, 0, 0);
+            box-shadow: 0px 0px 5px 10px #323232; 
+    
+    } */
+
+    .main.com nav ul{
+        list-style-type: none;
+        font-family:'Bebas Neue', cursive;
+        color:rgb(243, 243, 243);
+        
+    }
+    .main.com nav{
+
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        background-color:black;
+        height: 10vh;
+        border-bottom:1px solid rgba(255, 255, 255);
+    }
+    .main.fr .firstbox {
+        display:none;
+    }
+    .main.fr .frgamecontainer{
+    display:flex;
+        background-color:#080808;
+        width:100vh;
+        height: 100vh;
+    
+    }
+    /* .main.fr .frcontainer{
+        background-color:#080808;
+        display:flex;
+        position: relative;
+        top:30vh;
+        right:50vh;
+        height:50vh;
+        width:50vh;
+    } */
+    .main.fr .frgameinfo h1{
+    box-sizing: border-box;
+    font-family:'Bebas Neue', cursive;
+    font-size:12vh;
+    color:#310707;
+    position: relative;
+    bottom:20vh;
+    right:55vh;
+    }
+    .main.fr .info{
+        box-sizing: border-box;
+        font-family:'Bebas Neue', cursive;
+        font-size:5vh;
+        color:#310707;
+        position: relative;
+        bottom:10vh;
+        right:55vh;
+    
+    }
+    .main.fr #resetfrd{
+        box-sizing: border-box;
+        font-family:'Bebas Neue', cursive;
+        font-size:5vh;
+        color:rgb(54, 218, 155);
+        position: relative;
+        top:1vh;
+        right:55vh;
+        padding:1vh 1vh ;
+        background-color:hsla(60, 100%, 73%, 0.986);
+        border-radius: 10px;
+    }
+    .main.fr .frgameinfo{
+            background-color:#080808;
+           
+            position: relative;
+            top:35vh;
+            font-family:'Bebas Neue', cursive;
+        }
+        .main.fr .fbox{
+            font-family:'Bebas Neue', cursive;
+            color:rgb(66, 188, 245);
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            border-top:1px solid rgb(243, 243, 243);
+            border-left:1px solid rgb(243, 243, 243);
+            border-right: 1px solid rgb(243, 243, 243);
+            border-bottom:1px solid rgb(243, 243, 243);
+            font-size: 6vw;
+            /* box-shadow: 0px 0px 5px 10px #323232; */
+        }
+        
+    
+        
+        .main.fr .frcontainer{
+            display:flex;
+            display:-ms-grid;
+            display:grid;
+            -ms-grid-rows:repeat(3, 10vw);
+            -ms-grid-columns:repeat(3 ,10vw);
+            grid-template-rows:repeat(3, 10vw);
+            grid-template-columns:repeat(3, 10vw);
+            position: relative;
+            left:60vw;
+            margin-top: 8vw;
+            background-color:#080808;
+        
+            
+        
+        }
+        
+        .main.fr .frbox:hover{
+            background-color:rgb(255, 255, 255);
+                box-shadow: 0px 0px 5px 10px #323232; 
+        
+        } 
+    
+         .main.fr nav ul{
+            list-style-type: none;
+            font-family:'Bebas Neue', cursive;
+            color:rgb(243, 243, 243);
+            
+        }
+        .main.fr nav{
+    
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            background-color:black;
+            height: 10vh;
+            border-bottom:1px solid rgba(255, 255, 255);
+        }
+
+  td {
+    border:  2px solid #333;
+    height:  100px;
+    width:  100px;
+    text-align:  center;
+    vertical-align:  middle;
+    font-family:  "Comic Sans MS", cursive, sans-serif;
+    font-size:  70px;
+    cursor: pointer;
+  }
+  
+  table {
+    border-collapse: collapse;
+    position:   absolute;
+    left: 80%;
+    margin-left: -155px;
+    bottom: 10%;
+    color:white;
+  }
+  
+  table tr:first-child td {
+    border-top: 0;
+  }
+  
+  table tr:last-child td {
+    border-bottom: 0;
+  }
+  
+  table tr td:first-child {
+    border-left: 0;
+  }
+  table tr td:last-child {
+    border-right: 0;
+  }
+  
+  .endgame {
+    display: none;
+    width:  250px;
+    bottom: 20%;
+    background-color: rgba(255, 239, 93, 0.8);
+    position: absolute;
+    left: 45%;
+    margin-left: -100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    border-radius: 5px;
+    color: rgb(96, 236, 255);
+    font-size: 2em; 
+    font-family:'Bebas Neue', cursive;
+  }
+  
+  .selectSym{
+    font-family:'Bebas Neue', cursive;
+    display: none;
+    width: 220px;
+    height:140px;
+    top: 250px;
+    background-color: #080808;
+    position: absolute;
+    left: 50%;
+    margin-left: -110px;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    text-align: center;
+    border-radius: 5px;
+    color: rgb(255, 27, 27);
+    font-size: 2em; 
+  }
+  
+  .selectSym button{
+    font-family:'Bebas Neue', cursive;
+    font-size:  50px;
+    width: 70px;
+  }
+  
+  .selectSym  button:first-of-type {
+    margin-right: 10px;
+    margin-top: 15px;
+    background-color:aqua;
+    color:rgb(255, 255, 123);
+  }
+  .selectSym  button:last-of-type {
+    margin-left: 10px;
+    margin-top: 15px;
+    background-color:aqua;
+    color:rgb(255, 255, 123);
+  }
+  #replay{
+      display: flex;
+      width:10vh;
+      height:5vh;
+      position:relative;
+      top:60%;
+      left:10%;
+      background-color:black;
+      color:rgb(255, 255, 255);
+      border-radius:10px;
+      justify-content:center;
+      align-items:center;
+      font-size:2.7vh;
+      font-family:'Bebas Neue', cursive;
+  }
+  .main.com h1{
+      display:flex;
+      flex:wrap;
+      box-sizing: border-box;
+    font-size: 45px;
+    position: absolute;
+    color:rgb(243, 243, 243);
+    left:35%;
+    top:20%;
+    font-family:'Bebas Neue', cursive;
+  }
+  .main.fr .video img{
+      
+      display:flex;
+      position: absolute;
+       width:0vh;        /*  70vh */
+      border-radius: 10px;
+      bottom:50%;
+      right:80%;
+      transition:width 1s ease-in-out;
+
+  }
+  .main.fr .video video{
+      
+    display:flex;
+    position: absolute;
+     width:0vh;        /*  70vh */
+    border-radius: 10px;
+    bottom:50%;
+    right:80%;
+    transition:width 1s ease-in-out;
+
+}
+  .main.fr .frinfo{
+    display:flex;
+    position: absolute;
+    bottom:60%;
+    right:100%;
+    font-size:20px;
+    color:white;
+  }
+  .reset{
+      
+    box-sizing: border-box;
+    font-family:'Bebas Neue', cursive;
+    font-size:5vh;
+    color:rgb(54, 218, 155);
+    position: relative;
+    top:1vh;
+    right:55vh;
+    padding:1vh 1vh ;
+    background-color:hsla(60, 100%, 73%, 0.986);
+    border-radius: 10px;
+}
+.main.com .lvdeio video{
+    display:flex;
+    position: absolute;
+     width:0vh;        /*  70vh */
+    border-radius: 10px;
+    bottom:50%;
+
+    transition:width 1s ease-in-out;
+}
